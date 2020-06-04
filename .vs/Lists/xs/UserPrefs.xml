@@ -1,24 +1,32 @@
 ﻿<Properties StartupConfiguration="{64581280-A03C-4764-A6C4-C50D5EB94885}|Default">
   <MonoDevelop.Ide.ItemProperties.Lists.Android FirstBuild="True" PreferredExecutionTarget="Android.HT79P1A00321" />
   <MonoDevelop.Ide.ItemProperties.Lists.iOS FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Notes/Notes/NoteEntryPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lists/Views/AboutPage.xaml">
     <Files>
-      <File FileName="../Notes/Notes/NoteEntryPage.xaml" Line="1" Column="1" />
-      <File FileName="../Notes/Notes/NoteEntryPage.xaml.cs" Line="29" Column="10" />
+      <File FileName="Lists/AppShell.xaml.cs" Line="44" Column="16" />
+      <File FileName="Lists/AppShell.xaml" Line="29" Column="55" />
+      <File FileName="Lists/App.xaml" Line="1" Column="1" />
+      <File FileName="Lists/Views/AboutPage.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Lists" expanded="True">
-            <Node name="Lists" expanded="True" />
+            <Node name="Lists" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="AboutPage.xaml" selected="True" />
+              </Node>
+              <Node name="AppShell.xaml" expanded="True" />
+            </Node>
+            <Node name="Lists.Android" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
           </Node>
           <Node name="Notes" expanded="True">
             <Node name="Notes" expanded="True">
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="NoteEntryPage.xaml" expanded="True">
-                <Node name="NoteEntryPage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="NoteEntryPage.xaml" expanded="True" />
               <Node name="NotesPage.xaml" expanded="True" />
             </Node>
           </Node>
@@ -27,7 +35,11 @@
               <Node name="Views" expanded="True">
                 <Node name="AboutPage.xaml" expanded="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" />
               <Node name="AppShell.xaml" expanded="True" />
+            </Node>
+            <Node name="Xaminals.Android" expanded="True">
+              <Node name="Resources" expanded="True" />
             </Node>
           </Node>
         </State>

@@ -11,7 +11,6 @@ namespace Lists
 {
     public partial class AppShell : Shell
     {
-        Random rand = new Random();
         Dictionary<string, Type> routes = new Dictionary<string, Type>();
         public Dictionary<string, Type> Routes { get { return routes; } }
 
@@ -20,7 +19,20 @@ namespace Lists
         public AppShell()
         {
             InitializeComponent();
+            RegisterRoutes();
             BindingContext = this;
+        }
+
+        void RegisterRoutes()
+        {
+            routes.Add("todoentry", typeof(Lists.Views.ToDoEntryPage));
+            routes.Add("shoppingentry", typeof(Lists.Views.ShoppingEntryPage));
+            routes.Add("goalsentry", typeof(Lists.Views.GoalsEntryPage));
+
+            foreach (var item in routes)
+            {
+                Routing.RegisterRoute(item.Key, item.Value);
+            }
         }
 
         void OnNavigating(object sender, ShellNavigatingEventArgs e)
