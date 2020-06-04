@@ -2,17 +2,19 @@
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Windows.Input;
+using Xamarin.Essentials;
 
 namespace Lists.Views
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
-    [DesignTimeVisible(false)]
     public partial class AboutPage : ContentPage
     {
+        public ICommand TapCommand => new Command<string>(async (url) => await Launcher.OpenAsync(url));
+
         public AboutPage()
         {
             InitializeComponent();
+            BindingContext = this;
         }
     }
 }

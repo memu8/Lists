@@ -27,25 +27,19 @@
         </Style>
         <Style TargetType="ShellItem"
                BasedOn="{StaticResource BaseStyle}" />
-        <Style x:Key="DomesticShell"
-               TargetType="Element"
-               BasedOn="{StaticResource BaseStyle}">
-            <Setter Property="Shell.BackgroundColor"
-                    Value="#039BE6" />
-        </Style>
-        <Style x:Key="ToDoListShell"
+        <Style x:Key="ToDoShell"
                TargetType="Element"
                BasedOn="{StaticResource BaseStyle}">
             <Setter Property="Shell.BackgroundColor"
                     Value="#689F39" />
         </Style>
-        <Style x:Key="ShoppingListShell"
+        <Style x:Key="ShoppingShell"
                TargetType="Element"
                BasedOn="{StaticResource BaseStyle}">
             <Setter Property="Shell.BackgroundColor"
                     Value="#ED3B3B" />
         </Style>
-        <Style x:Key="GoalsListShell"
+        <Style x:Key="GoalsShell"
                TargetType="Element"
                BasedOn="{StaticResource BaseStyle}">
             <Setter Property="Shell.BackgroundColor"
@@ -60,26 +54,12 @@
     </Shell.Resources>
 
     <Shell.FlyoutHeader>
-        <controls:FlyoutHeader />
+        <controls:FlyoutHeader/>
     </Shell.FlyoutHeader>
 
     <FlyoutItem Route="lists"
                 Title="Lists"
                 FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="To Do"
-             Route="todo"
-             Icon="paw.png">
-            <ShellContent Route="cats"
-                          Style="{StaticResource DomesticShell}"
-                          Title="Cats"
-                          Icon="cat.png"
-                          ContentTemplate="{DataTemplate views:CatsPage}" />
-            <ShellContent Route="dogs"
-                          Style="{StaticResource DomesticShell}"
-                          Title="Dogs"
-                          Icon="dog.png"
-                          ContentTemplate="{DataTemplate views:DogsPage}" />
-        </Tab>
 
         <!--
 
@@ -92,21 +72,21 @@
         this code is valid and does build.
                
         -->
-        <ShellContent Route="monkeys"
-                      Style="{StaticResource MonkeysShell}"
-                      Title="Monkeys"
-                      Icon="monkey.png"
-                      ContentTemplate="{DataTemplate views:MonkeysPage}" />
-        <ShellContent Route="elephants"
-                      Style="{StaticResource ElephantsShell}"
-                      Title="Elephants"
-                      Icon="elephant.png"
-                      ContentTemplate="{DataTemplate views:ElephantsPage}" />
-        <ShellContent Route="bears"
-                      Style="{StaticResource BearsShell}"
-                      Title="Bears"
-                      Icon="bear.png"
-                      ContentTemplate="{DataTemplate views:BearsPage}" />
+        <ShellContent Route="todo"
+                      Style="{StaticResource ToDoShell}"
+                      Title="To Do"
+                      Icon="todo.png"
+                      ContentTemplate="{DataTemplate views:ToDoPage}" />
+        <ShellContent Route="shopping"
+                      Style="{StaticResource ShoppingShell}"
+                      Title="Shopping"
+                      Icon="shopping.png"
+                      ContentTemplate="{DataTemplate views:ShoppingPage}" />
+        <ShellContent Route="goals"
+                      Style="{StaticResource GoalsShell}"
+                      Title="Goals"
+                      Icon="goals.png"
+                      ContentTemplate="{DataTemplate views:GoalsPage}" />
     </FlyoutItem>
 
     <ShellContent Route="about"
@@ -115,9 +95,6 @@
                   Icon="info.png"
                   ContentTemplate="{DataTemplate views:AboutPage}" />
 
-    <MenuItem Text="Random"
-              IconImageSource="random.png"
-              Command="{Binding RandomPageCommand}" />
     <MenuItem Text="Help"
               IconImageSource="help.png"
               Command="{Binding HelpCommand}"
