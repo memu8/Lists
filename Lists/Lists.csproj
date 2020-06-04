@@ -13,5 +13,6 @@
   <ItemGroup>
     <Folder Include="Controls\" />
     <Folder Include="Data\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>

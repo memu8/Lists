@@ -54,7 +54,7 @@
     </Shell.Resources>
 
     <Shell.FlyoutHeader>
-        <controls:FlyoutHeader/>
+        <controls:FlyoutHeader />
     </Shell.FlyoutHeader>
 
     <FlyoutItem Route="lists"

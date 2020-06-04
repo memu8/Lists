@@ -31,7 +31,7 @@
             </Grid>
         </DataTemplate>
         
-        <DataTemplate x:Key="ListsSearchTemplate">
+        <DataTemplate x:Key="ListSearch">
             <Grid Padding="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.15*" />

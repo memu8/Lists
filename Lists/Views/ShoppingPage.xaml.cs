@@ -21,7 +21,7 @@ namespace Lists.Views
 
         async void OnNoteAddedClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ItemEntryPage
+            await Navigation.PushAsync(new ShoppingEntryPage
             {
                 BindingContext = new Lists.Models.Item()
             });
@@ -31,7 +31,7 @@ namespace Lists.Views
         {
             if (e.SelectedItem != null)
             {
-                await Navigation.PushAsync(new ItemEntryPage
+                await Navigation.PushAsync(new ShoppingEntryPage
                 {
                     BindingContext = e.SelectedItem as Lists.Models.Item
                 });
