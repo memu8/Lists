@@ -37,5 +37,22 @@ namespace Lists.Views
                 });
             }
         }
+
+        //async void OnCheckBoxCheckedChanged(object sender, SelectedItemChangedEventArgs e)
+        //{
+        //    if (e.SelectedItem != null)
+        //    {
+        //        //var note = e.SelectedItem as Lists.Models.Item;
+        //        //await Navigation.PushAsync(new ShoppingEntryPage
+        //        //{
+        //        //    BindingContext = new Lists.Models.Item()
+        //        //});
+        //        await Navigation.PushAsync(new ShoppingEntryPage
+        //        {
+        //            BindingContext = e.SelectedItem as Lists.Models.Item
+        //        });
+        //        //await App.ShoppingDatabase.DeleteNoteAsync((Lists.Models.Item)BindingContext);
+        //    }
+        //}
     }
 }

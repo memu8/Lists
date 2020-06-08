@@ -18,12 +18,21 @@
 
     <ListView x:Name="listView"
               Margin="20"
-              ItemSelected="OnListViewItemSelected">
+              ItemSelected="OnListViewItemSelected"
+              ItemsSource="{Binding}">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Text}"
-                          TextColor="Black"
-                          Detail="{Binding Date}"/>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox />
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding Text}"
+                               TextColor="Black"/>
+                            <Label Text="{Binding Date}"
+                               TextColor="DarkBlue"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

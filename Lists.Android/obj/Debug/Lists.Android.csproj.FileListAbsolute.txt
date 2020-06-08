@@ -485,3 +485,9 @@
 /Users/melissamu/Projects/Lists/Lists.Android/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/melissamu/Projects/Lists/Lists.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/melissamu/Projects/Lists/Lists.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/melissamu/Projects/Lists/Lists.Android/obj/Debug/res/drawable/logo.png
+/Users/melissamu/Projects/Lists/Lists.Android/obj/Debug/res/drawable/goals.png
+/Users/melissamu/Projects/Lists/Lists.Android/obj/Debug/res/drawable/help.png
+/Users/melissamu/Projects/Lists/Lists.Android/obj/Debug/res/drawable/info.png
+/Users/melissamu/Projects/Lists/Lists.Android/obj/Debug/res/drawable/shopping.png
+/Users/melissamu/Projects/Lists/Lists.Android/obj/Debug/res/drawable/todo.png

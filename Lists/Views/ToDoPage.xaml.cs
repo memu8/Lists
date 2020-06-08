@@ -37,5 +37,9 @@ namespace Lists.Views
                 });
             }
         }
+
+        void CheckBox_CheckedChanged(System.Object sender, Xamarin.Forms.CheckedChangedEventArgs e)
+        {
+        }
     }
 }

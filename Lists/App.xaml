@@ -30,6 +30,12 @@
                        VerticalOptions="End" />
             </Grid>
         </DataTemplate>
+
+        <Thickness x:Key="PageMargin">20</Thickness>
+
+        <Color x:Key="AppBackgroundColor">AliceBlue</Color>
+        <Color x:Key="NavigationBarColor">#1976D2</Color>
+        <Color x:Key="NavigationBarTextColor">White</Color>
         
         <DataTemplate x:Key="ListSearch">
             <Grid Padding="10">
